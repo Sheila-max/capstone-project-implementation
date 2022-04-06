@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Apr 05, 2022 at 05:33 PM
+-- Generation Time: Apr 06, 2022 at 09:16 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 7.4.28
 
@@ -37,8 +37,13 @@ CREATE TABLE `brands` (
 --
 
 INSERT INTO `brands` (`brand_id`, `brand_name`) VALUES
-(25, 'Lord noble'),
-(26, 'Avril à moi');
+(20, 'Lord noble'),
+(21, 'Avril à Moi'),
+(22, 'Best gadgets'),
+(23, 'Higher kingdom'),
+(24, 'Manidi250'),
+(25, 'Iraba Cosmetics'),
+(26, 'Bags and Beyond');
 
 -- --------------------------------------------------------
 
@@ -52,6 +57,13 @@ CREATE TABLE `cart` (
   `c_id` int(11) DEFAULT NULL,
   `qty` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `cart`
+--
+
+INSERT INTO `cart` (`p_id`, `ip_add`, `c_id`, `qty`) VALUES
+(31, '::1', 4, 1);
 
 -- --------------------------------------------------------
 
@@ -171,26 +183,26 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`product_id`, `product_cat`, `product_brand`, `product_title`, `stock`, `product_price`, `product_desc`, `product_image`, `product_keywords`) VALUES
-(11, 12, 25, 'Lord Noble pants', 2, 10000, 'Clothes', '../images/products/Revolution logo.jpg', 'pants'),
-(12, 15, 25, 'Avril à Moi dress', 2, 7000, 'dress', '../images/products/avril à moi dress.png', 'dress'),
-(13, 12, 25, 'Bags and Beyond', 2, 6000, 'bags', '../images/products/flove tote.png', 'bags'),
-(14, 15, 25, 'Manidi250', 2, 10000, 'shoes', '../images/products/manidi shoes.png', 'shoes'),
-(15, 14, 25, 'Espresso Lip Balm', 2, 3000, 'lip balm', '../images/products/Espresso-Lipbalm.jpg', 'lip balm'),
-(16, 12, 25, 'Iraba hair moisturizer', 2, 12000, 'Hair Butter', '../images/products/iraba hair care.png', 'hair butter'),
-(17, 16, 26, 'Higk bracelet', 2, 7000, 'This is minimalist ring is made of sterling silver. It is light, yet durable. ', '../images/products/hiighk bracelete.png', 'minimalist'),
-(18, 16, 26, 'Revolution', 0, 8000, 'New collection name derived from Kinyarwanda "kwanda" meaning expansion. We use this to teach people who are not familiar with the Rwandan culture or history. \r\n', '../images/products/revolution t-shirt.png', 't-shirt'),
-(19, 16, 26, 'Zirconia Ring', 0, 15000, 'This ring is made of sterling silver and zirconia. Idea for an affordable engagement or promise ring.\r\n', '../images/products/zirconia.jpg', 'zirconia'),
-(20, 16, 26, 'Revolve ring', 0, 25000, 'This ring is made of thick sterling silver sheet revolving around itself.', '../images/products/revolve.jpg', 'ring'),
-(21, 16, 26, 'Mini-Me Ring', 0, 6000, 'This ring is made of a thin ring of sterling silver. It looks best when one wears a number of them as knuckle rings on different fingers. ', '../images/products/mini-me.jpg', 'Mini-Me'),
-(22, 16, 26, 'Loop Ring', 0, 8000, 'This ring is made of a thin whoop of sterling silver which loops around itself. The number of whoops can vary depending on the client’s wishes.', '../images/products/loop.jpg', 'ring'),
-(23, 16, 26, 'Love Ring', 0, 8000, 'This ring is made of a thin string of sterling silver, embellished with a hollow heart shape also made out of sterling silver. \r\n', '../images/products/love.jpg', 'ring'),
-(24, 16, 26, 'Reindeer Ring', 0, 10000, 'This ring is made of sterling silver, with a reindeer horn design in its center', '../images/products/reindeer.jpg', 'ring'),
-(25, 16, 26, 'Bauhaus Ring I', 0, 15000, 'This ring is made of sterling silver. Its design is inspired by the Bauhaus art and design movement ', '../images/products/bauhausI.jpg', 'ring'),
-(26, 16, 26, 'Bauhaus Ring II', 0, 15000, 'This ring is made of sterling silver. Its design is inspired by the Bauhaus art and design movement\r\n', '../images/products/bauhausII.png', 'ring'),
-(27, 16, 26, 'Stacklable Ring', 0, 20000, 'This ring is made of many sterling silver bands. The customer may customize the ring to have as many stackable bands as they want.\r\n', '../images/products/stackable.jpg', 'ring'),
-(28, 16, 26, 'Lava Tree Ring', 0, 15000, 'This bold ring is made of a sterling silver band and a large lava rock engulfed in tree branches made of sterling silver wires. ', '../images/products/lava_tree.jpg', 'ring'),
-(29, 17, 26, 'Healing Lava Bracelet', 0, 7000, 'This bracelet is made of ring is made of lava beads and an assortment of different bead spacers. The pores in the lava beads are filled with aroma-therapeutic essential oils.\r\n', '../images/products/bracelet.jpg', 'bracelet'),
-(30, 18, 26, 'Healing lava Necklace', 0, 15000, 'This necklace is made of a thin sterling silver chain embellished with a lava bead. This bead is filled with aroma-therapeutic essential oils. \r\n', '../images/products/healing_necklace.jpg', 'Necklace');
+(10, 13, 22, 'iPhone 13', 3, 300000, 'Refurbished iPhone 13, in excellent condition', '../images/products/iphone.jpeg', 'phones'),
+(12, 12, 25, 'Lord noble clothes', 2, 10000, 'Clothes', '../images/products/lordnoble.png', 'lord noble'),
+(13, 14, 23, 'Hiighk bracelet', 4, 15000, 'Looking for the perfect gift for freedom lovers?\r\nThis is your plug', '../images/products/hiighk_bracelete.png', 'bracelet'),
+(14, 17, 24, 'Manidi250', 5, 13000, 'Handmade shoes for men and women to rock their style.', '../images/products/manidi_shoes.png', 'shoes'),
+(15, 15, 25, 'Espresso Lip Balm', 2, 3000, 'lip balm', '../images/products/Espresso-Lipbalm.jpg', 'lip balm'),
+(19, 14, 23, 'Zirconia ', 1, 15000, 'This ring is made of sterling silver and zirconia. Idea for an affordable engagement or promise ring.', '../images/products/zirconia.jpg', 'zirconia'),
+(20, 14, 23, 'Revolve ', 2, 25000, 'This ring is made of thick sterling silver sheet revolving around itself.', '../images/products/revolve.jpg', 'ring'),
+(21, 14, 23, 'Mini-Me ', 3, 6000, 'This ring is made of a thin ring of sterling silver. It looks best when one wears a number of them as knuckle rings on different fingers. ', '../images/products/mini-me.jpg', 'Mini-Me'),
+(22, 14, 23, 'Loop ', 2, 8000, 'This ring is made of a thin whoop of sterling silver which loops around itself. The number of whoops can vary depending on the client’s wishes.', '../images/products/loop.jpg', 'ring'),
+(23, 14, 23, 'Love Ring', 1, 8000, 'This ring is made of a thin string of sterling silver, embellished with a hollow heart shape also made out of sterling silver. \r\n', '../images/products/love.jpg', 'ring'),
+(24, 14, 23, 'Reindeer Ring', 5, 10000, 'This ring is made of sterling silver, with a reindeer horn design in its center', '../images/products/reindeer.jpg', 'ring'),
+(25, 14, 23, 'Bauhaus Ring I', 2, 15000, 'This ring is made of sterling silver. Its design is inspired by the Bauhaus art and design movement ', '../images/products/bauhausI.jpg', 'ring'),
+(26, 14, 23, 'Bauhaus Ring II', 4, 15000, 'This ring is made of sterling silver. Its design is inspired by the Bauhaus art and design movement\r\n', '../images/products/bauhausII.png', 'ring'),
+(27, 14, 23, 'Stacklable Ring', 1, 20000, 'This ring is made of many sterling silver bands. The customer may customize the ring to have as many stackable bands as they want.\r\n', '../images/products/stackable.jpg', 'ring'),
+(28, 14, 23, 'Lava Tree Ring', 2, 15000, 'This bold ring is made of a sterling silver band and a large lava rock engulfed in tree branches made of sterling silver wires. ', '../images/products/lava_tree.jpg', 'ring'),
+(29, 14, 23, 'Healing Lava Bracelet', 0, 7000, 'This bracelet is made of ring is made of lava beads and an assortment of different bead spacers. The pores in the lava beads are filled with aroma-therapeutic essential oils.\r\n', '../images/products/bracelet.jpg', 'bracelet'),
+(30, 14, 23, 'Healing lava Necklace', 0, 15000, 'This necklace is made of a thin sterling silver chain embellished with a lava bead. This bead is filled with aroma-therapeutic essential oils. \r\n', '../images/products/healing_necklace.jpg', 'Necklace'),
+(31, 18, 25, 'Iraba', 3, 9000, 'This rich, versatile, vegetarian Hair moisturizer is made with all-natural oils and has an amazing ability to soften curls.', '../images/products/iraba_hair_care.png', 'iraba'),
+(32, 16, 26, 'Bags and Beyond', 10, 15000, 'An easy to carry tote bag for your laptop.', '../images/products/flove_tote.png', 'bag'),
+(33, 12, 27, 'Revolution', 5, 6000, 'New collection, name derived from Kinyarwanda ', '../images/products/revolution_t-shirt.png', 'shirts');
 
 --
 -- Indexes for dumped tables
@@ -221,6 +233,12 @@ ALTER TABLE `categories`
 ALTER TABLE `customer`
   ADD PRIMARY KEY (`customer_id`),
   ADD UNIQUE KEY `customer_email` (`customer_email`);
+
+--
+-- Indexes for table `products`
+--
+ALTER TABLE `products`
+  ADD PRIMARY KEY (`product_id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
