@@ -8,7 +8,7 @@ const paymentForm = document.getElementById('paymentForm');
 			key: 'pk_live_bd5356607a881f3a0d6843b75d3172b74b9675cd', // Replace with your public key
 			email: document.getElementById("email-address").value,
 			amount: document.getElementById("amount").value * 100,
-			currency:'GHS',
+			currency:'RWF',
 			onClose: function(){
 			alert('Window closed.');
 			},

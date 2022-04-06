@@ -180,7 +180,7 @@ else{
             <input type="text" class="form-control" id="pname" name="pname"value="<?php echo $product['product_title'] ?>">
             </div>
             <div class="form-group">
-            <label>Product Price (Ghc)</label>
+            <label>Product Price (Rwf)</label>
             <input type="number" class="form-control" id="pprice" name="pprice"value="<?php echo $product['product_price'] ?>">
             </div>
             <div class="form-group">

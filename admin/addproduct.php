@@ -178,7 +178,7 @@ else{
             <input type="text" class="form-control" id="pname" name="pname">
             </div>
             <div class="form-group">
-            <label>Product Price (Ghc)</label>
+            <label> (Rwf)</label>
             <input type="number" class="form-control" id="pprice" name="pprice">
             </div>
             <div class="form-group">

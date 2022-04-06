@@ -56,7 +56,7 @@ if(isset($decodedResponse->data->status) && $decodedResponse->data->status === '
         $amount=cartValue_controller($cid);
 
         // insert payment details
-        $addPayment=addPayment_controller($amount['Result'],$cid,$recent['recent'],"GHC",$ord_date);
+        $addPayment=addPayment_controller($amount['Result'],$cid,$recent['recent'],"Rwf",$ord_date);
         if($addPayment){
             // delete all checked out products from cart from table
             $delete=deleteWholeCart_controller($cid);
