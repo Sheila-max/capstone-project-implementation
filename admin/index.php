@@ -78,7 +78,7 @@ else{
               <li class="nav-item">
                 <a href="./customizedorders.php" class="nav-link ">
                   <i class="fas fa-wallet nav-icon"></i>
-                  <p>Customized Orders</p>
+                  <p>Orders</p>
                 </a>
               </li>
               <li class="nav-item">

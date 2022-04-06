@@ -12,12 +12,12 @@ if(isset($_POST['addbrand'])){
     $result = add_brand_controller($name);
 
     if($result){
-        echo '<script> alert("Brand Added succesfully!")
+        echo '<script> alert("Business Added succesfully!")
         window.location.href="Location: ../admin/brand.php"
         </script>';
     } 
     else{
-        echo '<script> alert("Failed to add brand!")
+        echo '<script> alert("Failed to add business!")
         window.location.href="Location: ../admin/brand.php"
         </script>';
     } 
@@ -35,12 +35,12 @@ if(isset($_GET['deleteBrandID'])){
     $result = delete_brand_controller($id);
     
     if($result){
-        echo '<script> alert("Brand deleted succesfully!")
+        echo '<script> alert("Business deleted succesfully!")
         window.location.href="Location: ../admin/brand.php"
         </script>';
     }
     else {
-        echo '<script> alert("Could not deleted brand!")
+        echo '<script> alert("Could not deleted business!")
         window.location.href="Location: ../admin/brand.php"
         </script>';
         }

@@ -10,7 +10,7 @@ include('menu.php');
 <section class="home-section home-fade home-full-height" id="home">
   <div class="hero-slider">
     <ul class="slides">
-      <li class="bg-dark-30 bg-dark shop-page-header" style="background-image:url(&quot;../assets/images/landing/bg.png&quot;);">
+      <li class="bg-dark-30 bg-dark shop-page-header" style="background-image:url(&quot;../assets/images/landing/bI.jpeg&quot;);">
         <div class="titan-caption">
           <div class="caption-content">
             <div class="font-alt mb-30 titan-title-size-1">We are COMPASS</div>
@@ -19,7 +19,7 @@ include('menu.php');
           </div>
         </div>
       </li>
-      <li class="bg-dark-30 bg-dark shop-page-header" style="background-image:url(&quot;../assets/images/landing/jw.png&quot;);">
+      <li class="bg-dark-30 bg-dark shop-page-header" style="background-image:url(&quot;../assets/images/landing/LN logo.jpeg&quot;);">
         <div class="titan-caption">
           <div class="caption-content">
             <div class="font-alt mb-30 titan-title-size-1"> Compass</div>
@@ -27,11 +27,11 @@ include('menu.php');
           </div>
         </div>
       </li>
-      <li class="bg-dark-30 bg-dark shop-page-header" style="background-image:url(&quot;../assets/images/landing/bg1.png&quot;);">
+      <li class="bg-dark-30 bg-dark shop-page-header" style="background-image:url(&quot;../assets/images/landing/revolution logo.jpeg&quot;);">
         <div class="titan-caption">
           <div class="caption-content">
             <div class="font-alt mb-30 titan-title-size-1">Compass</div>
-            <div class="font-alt mb-40 titan-title-size-3">Directing you to your local businesses</div><a class="section-scroll btn btn-border-w btn-round" href="#latest">Learn More</a>
+            <div class="font-alt mb-40 titan-title-size-3">Directing you to local businesses in your neighborhood</div><a class="section-scroll btn btn-border-w btn-round" href="#latest">Learn More</a>
           </div>
         </div>
       </li>

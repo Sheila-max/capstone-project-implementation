@@ -103,7 +103,7 @@ else{
               <li class="nav-item">
                 <a href="./brand.php" class="nav-link active">
                   <i class="fas fa-table nav-icon"></i>
-                  <p>Brands</p>
+                  <p>Businesses</p>
                 </a>
               </li>
               <li class="nav-item">
@@ -141,7 +141,7 @@ else{
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Brands</h1>
+            <h1 class="m-0">Businesses</h1>
           </div><!-- /.col -->
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
@@ -155,7 +155,7 @@ else{
         <div class="row">
           
             <div class="ml-2" >
-            <button type="button" class="btn btn-primary btn-round"  data-toggle="modal" data-target="#addbrand">Add new Brand</button>
+            <button type="button" class="btn btn-primary btn-round"  data-toggle="modal" data-target="#addbrand">Add new Business/Brand</button>
            
             </div>
 
@@ -167,7 +167,7 @@ else{
                 <!-- Modal content-->
                 <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Add Brand</h4>
+                    <h4 class="modal-title">Add Business/Brand</h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     
                 </div>
@@ -178,7 +178,7 @@ else{
                       </div>
 
                       <div class="form-submit">
-                        <button type="submit" class="btn btn-primary" name="addbrand" >Add Brand</button>
+                        <button type="submit" class="btn btn-primary" name="addbrand" >Add Business</button>
                       </div>
                     </form>
                 
@@ -199,8 +199,8 @@ else{
                 <table class="table table-hover text-nowrap">
                   <thead>
                     <tr>
-                    <th> Brand ID</th>
-                    <th> Brand Name</th>
+                    <th> Business ID</th>
+                    <th> Business Name</th>
                     <th> </th>
                     <th> </th>
                    
@@ -229,7 +229,7 @@ else{
             else{?>
                 
                 <tr>
-                <td>No brands Inserted Yet</td>
+                <td>No business/brands Inserted Yet</td>
                 
             	</tr>
 
@@ -261,7 +261,7 @@ else{
         <!-- Modal content-->
         <div class="modal-content">
         <div class="modal-header">
-            <h4 class="modal-title">Update Brand</h4>
+            <h4 class="modal-title">Update Brands/Bussinesses</h4>
             <button type="button" class="close" data-dismiss="modal">&times;</button>
             
         </div>
